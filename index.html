@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Web Pages with JavaScript</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>✨ Interactive Web Demo</h1>
+
+  <!-- Part 1: Event Handling -->
+  <section>
+    <h2>🖱️ Part 1: Event Handling</h2>
+    <button id="clickBtn">Click Me!</button>
+    <p id="clickMessage"></p>
+
+    <p id="hoverText">Hover over me to see the magic ✨</p>
+
+    <input type="text" id="keyboardInput" placeholder="Type something...">
+    <p id="keyboardOutput"></p>
+  </section>
+
+  <!-- Part 2: Interactive Elements -->
+  <section>
+    <h2>🎮 Part 2: Interactive Features</h2>
+    <!-- Dark Mode Toggle -->
+    <button id="darkModeBtn">Toggle Dark Mode 🌙</button>
+
+    <!-- Counter -->
+    <div id="counterBox">
+      <p>Counter: <span id="counterValue">0</span></p>
+      <button id="incrementBtn">➕ Increment</button>
+      <button id="resetBtn">🔄 Reset</button>
+    </div>
+
+    <!-- FAQ (Collapsible Section) -->
+    <div class="faq">
+      <h3 class="faq-question">❓ What is JavaScript?</h3>
+      <p class="faq-answer">JavaScript is a programming language that makes web pages interactive!</p>
+    </div>
+  </section>
+
+  <!-- Part 3: Form Validation -->
+  <section>
+    <h2>📋✅ Part 3: Form Validation</h2>
+    <form id="signupForm" novalidate>
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+      <small class="error" id="nameError"></small>
+
+      <label for="email">Email:</label>
+      <input type="text" id="email" required>
+      <small class="error" id="emailError"></small>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" required>
+      <small class="error" id="passwordError"></small>
+
+      <button type="submit">Submit</button>
+      <p id="formSuccess" class="success"></p>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
